@@ -1,13 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
+:root {
+  --main-bg-color: #1c262f;
+}
+html {
+  font-size: 1em;
+}
+/* *,
+::before,
+::after {
+  box-sizing: inherit;
+  font-size: inherit;
+} */
 
 body,
 td,
 th,
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-  color: #333;
+  /* font-size: 1em; */
+  color: rgb(116, 100, 100);
   line-height: 1.5;
 }
 body {
@@ -18,16 +30,16 @@ body {
 ul,
 li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
+  font-size: 1em;
   color: #333;
 }
 a {
-  color: orange;
+  color: #ffab57;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #3397db;
+  color: #6ee9fc;
   text-decoration: none;
 }
 a img {
@@ -40,7 +52,7 @@ h4,
 h5,
 h6 {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
+  margin: 0 0 1.5em;
 }
 article,
 aside,
@@ -60,32 +72,41 @@ section {
   background-color: #f3f3f3;
   min-height: 100%;
 }
+
+/*===================footer===============*/
+
 #footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px;
+  background-color: var(--main-bg-color);
+  color: #ffffff;
+  font-size: 0.65em;
+  letter-spacing: 0.0625em;
+  padding: 1.6em;
   text-align: center;
   text-transform: uppercase;
 }
+/*====================end of footer==========*/
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
-  background-color: #252831;
+  height: 4.5em;
+  background-color: var(--main-bg-color);
   text-align: center;
+  padding: 0;
 }
 nav h1 {
   margin: auto;
+  font-size: 1em;
+  padding: 1em;
 }
 nav h1 a {
-  color: red;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 10px;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 600;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
 }
+
+/*=============== End of Nav============*/
 #breadcrumb {
   padding: 10px 40px 16px;
   list-style: none;
@@ -127,22 +148,27 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
-  background-color: #3397db;
+  height: 4.5em;
+  background-color: var(--main-bg-color);
   align-items: center;
 }
-.filter-options h2 {
-  color: white;
-  font-size: 1rem;
-  font-weight: normal;
+.filter-options legend {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
   line-height: 1;
   margin: 0 20px;
+}
+.filter-options label {
+  color: var(--main-bg-color);
+  font-size: 0.1em;
+  visibility: var(--main-bg-color);
 }
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial, sans-serif;
-  font-size: 11pt;
+  font-size: 1.1em;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
