@@ -24,32 +24,28 @@
         <div id="map"></div>
       </section>
       <section>
-          <form action="" class="filter-options">
-            <legend>Filter Results:</legend>
-            <select
-              id="neighborhoods-select"
-              name="neighborhoods"
-              onchange="updateRestaurants()"
-              aria-labelledby="neighborhoods-select"
-            >
+        <form action="" class="filter-options">
+          <h2>Filter Results</h2>
+          <select
+            id="neighborhoods-select"
+            name="neighborhoods"
+            onchange="updateRestaurants()"
+            aria-labelledby="neighborhoods-select"
+          >
+            <option value="all">All Neighborhoods</option>
+          </select>
+          <label for="neighborhoods-select">by neighborhoods</label>
 
-              <option value="all">All Neighborhoods</option>
-
-            </select>
-            <label for="neighborhoods-select">by neighborhoods</label>
-
-            <select
-              id="cuisines-select"
-              name="cuisines"
-              onchange="updateRestaurants()"
-              aria-labelledby="cuisines-select"
-            >
-              <option value="all">All Cuisines</option>
-            </select>
-            <label for="cuisines-select">by cuisines</label>
-
-          </form>
-        </div>
+          <select
+            id="cuisines-select"
+            name="cuisines"
+            onchange="updateRestaurants()"
+            aria-labelledby="cuisines-select"
+          >
+            <option value="all">All Cuisines</option>
+          </select>
+          <label for="cuisines-select">by cuisines</label>
+        </form>
         <ul id="restaurants-list"></ul>
       </section>
     </main>
