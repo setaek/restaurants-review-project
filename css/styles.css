@@ -156,7 +156,7 @@ nav h1 a {
   display: inline;
   color: #ffffff;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
 }
 .filter-options label {
@@ -169,11 +169,11 @@ nav h1 a {
   border: 1px solid #fff;
   font-family: Arial, sans-serif;
   font-size: 1.1em;
-  height: 35px;
+  height: 2em;
   letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
+  margin: 1em;
+  padding: 0 0.3em;
+  width: 10.5em;
 }
 
 /* ====================== Restaurant Listing ====================== */
