@@ -1,0 +1,38 @@
+@media screen and (max-width: 1122px) {
+  html {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 983px) {
+  html {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 793px) {
+  nav {
+    height: 3.5em;
+  }
+  nav h1 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .filter-options {
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .filter-options h2 {
+    order: 0;
+    margin-bottom: 0.3em;
+    font-weight: 200;
+  }
+  .filter-options select {
+    margin-top: 0.1em;
+    font-size: 1em;
+    height: 2em;
+    width: max-content;
+    margin: 0.1em auto;
+  }
+}
