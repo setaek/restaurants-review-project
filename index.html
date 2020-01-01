@@ -26,25 +26,28 @@
       <section>
         <form action="" class="filter-options">
           <h2>Filter Results</h2>
-          <select
-            id="neighborhoods-select"
-            name="neighborhoods"
-            onchange="updateRestaurants()"
-            aria-labelledby="neighborhoods-select"
-          >
-            <option value="all">All Neighborhoods</option>
-          </select>
-          <label for="neighborhoods-select">by neighborhoods</label>
+          <div class="filter-select">
+            <label for="neighborhoods-select">by neighborhoods</label>
 
-          <select
-            id="cuisines-select"
-            name="cuisines"
-            onchange="updateRestaurants()"
-            aria-labelledby="cuisines-select"
-          >
-            <option value="all">All Cuisines</option>
-          </select>
-          <label for="cuisines-select">by cuisines</label>
+            <select
+              id="neighborhoods-select"
+              name="neighborhoods"
+              onchange="updateRestaurants()"
+              aria-labelledby="neighborhoods-select"
+            >
+              <option value="all">All Neighborhoods</option>
+            </select>
+            <label for="cuisines-select">by cuisines</label>
+
+            <select
+              id="cuisines-select"
+              name="cuisines"
+              onchange="updateRestaurants()"
+              aria-labelledby="cuisines-select"
+            >
+              <option value="all">All Cuisines</option>
+            </select>
+          </div>
         </form>
         <ul id="restaurants-list"></ul>
       </section>
