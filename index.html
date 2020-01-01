@@ -9,6 +9,7 @@
       src="//normalize-css.googlecode.com/svn/trunk/normalize.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsiveStyle.css" />
     <title>Restaurant Reviews</title>
   </head>
 
@@ -26,28 +27,25 @@
       <section>
         <form action="" class="filter-options">
           <h2>Filter Results</h2>
-          <div class="filter-select">
-            <label for="neighborhoods-select">by neighborhoods</label>
+          <select
+            id="neighborhoods-select"
+            name="neighborhoods"
+            onchange="updateRestaurants()"
+            aria-labelledby="neighborhoods-select"
+          >
+            <option value="all">All Neighborhoods</option>
+          </select>
+          <label for="neighborhoods-select">by neighborhoods</label>
 
-            <select
-              id="neighborhoods-select"
-              name="neighborhoods"
-              onchange="updateRestaurants()"
-              aria-labelledby="neighborhoods-select"
-            >
-              <option value="all">All Neighborhoods</option>
-            </select>
-            <label for="cuisines-select">by cuisines</label>
-
-            <select
-              id="cuisines-select"
-              name="cuisines"
-              onchange="updateRestaurants()"
-              aria-labelledby="cuisines-select"
-            >
-              <option value="all">All Cuisines</option>
-            </select>
-          </div>
+          <select
+            id="cuisines-select"
+            name="cuisines"
+            onchange="updateRestaurants()"
+            aria-labelledby="cuisines-select"
+          >
+            <option value="all">All Cuisines</option>
+          </select>
+          <label for="cuisines-select">by cuisines</label>
         </form>
         <ul id="restaurants-list"></ul>
       </section>
