@@ -7,6 +7,9 @@
   html {
     font-size: 1.6em;
   }
+  #restaurants-list li {
+    width: 100em;
+  }
 }
 @media screen and (max-width: 793px) {
   nav {
@@ -34,5 +37,33 @@
     height: 2em;
     width: max-content;
     margin: 0.1em auto;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  html {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 296px) {
+  html {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 200px) {
+  html {
+    font-size: 0.2em;
   }
 }
