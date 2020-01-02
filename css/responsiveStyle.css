@@ -1,3 +1,18 @@
+@media screen and (max-width: 1130px) {
+  .inside {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .inside {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /*make flexbox for map and content in restaurant page*/
+  .inside #maincontent {
+  }
+}
 @media screen and (max-width: 1122px) {
   html {
     font-size: 1.3em;
