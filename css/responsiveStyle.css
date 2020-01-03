@@ -51,15 +51,15 @@
 
   .inside #restaurant-container {
     position: relative;
-    width: 100vw;
-    padding: 7em 5px 0 0;
+    width: 100%;
+    padding: 7em 0 0 0;
     margin: auto;
     text-align: center;
   }
 
   .inside #reviews-container {
     width: 100%;
-    padding: 5px;
+    padding: 0;
     margin: auto;
   }
 
