@@ -15,39 +15,42 @@
 
   <body>
     <header>
-      <nav>
-        <h1><a href="/">Restaurant Reviews</a></h1>
+      <nav role="navigation">
+        <h1><a href="/" role="banner" tabindex="1">Restaurant Reviews</a></h1>
       </nav>
     </header>
 
-    <main id="maincontent">
-      <section id="map-container">
-        <div id="map"></div>
+    <main id="maincontent" >
+      <section id="map-container" aria-labelledby="map-aria-description" role="application">
+        <div id="map" aria-label="Search through the map"></div>
       </section>
       <section>
-        <form action="" class="filter-options">
-          <h2>Filter Results</h2>
-          <select
+        <form action="" class="filter-options" role="slider">
+          <h2 tabindex="2">Filter Results</h2>
+          <label for="neighborhoods-select" tabindex="-1">by neighborhoods</label>
+
+          <select tabindex="3"
             id="neighborhoods-select"
             name="neighborhoods"
             onchange="updateRestaurants()"
             aria-labelledby="neighborhoods-select"
+            
           >
-            <option value="all">All Neighborhoods</option>
+            <option value="all" >All Neighborhoods</option>
           </select>
-          <label for="neighborhoods-select">by neighborhoods</label>
+          <label for="cuisines-select" tabindex="-1">by cuisines</label>
 
           <select
             id="cuisines-select"
             name="cuisines"
             onchange="updateRestaurants()"
             aria-labelledby="cuisines-select"
+            tabindex="4"
           >
             <option value="all">All Cuisines</option>
           </select>
-          <label for="cuisines-select">by cuisines</label>
         </form>
-        <ul id="restaurants-list"></ul>
+        <ul id="restaurants-list" role="list of restaurants" tabindex="5"></ul>
       </section>
     </main>
 
@@ -67,7 +70,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYb1WQLh2JaKpVrdZegH69tVAI2LH9gNs&libraries=places&callback=initMap"
     ></script>
 
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
       Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All
       Rights Reserved.
     </footer>
