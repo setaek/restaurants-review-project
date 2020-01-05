@@ -15,28 +15,38 @@
 
   <body>
     <header>
-      <nav role="navigation">
-        <h1><a href="/" role="banner" tabindex="1">Restaurant Reviews</a></h1>
+      <nav aria-label="Pagination Navigation">
+        <h1>
+          <a href="/" aria-label="Go to home page" tabindex="0"
+            >Restaurant Reviews</a
+          >
+        </h1>
       </nav>
     </header>
 
-    <main id="maincontent" >
-      <section id="map-container" aria-labelledby="map-aria-description" role="application">
+    <main id="maincontent">
+      <section id="map-container" tabindex="-1">
         <div id="map" aria-label="Search through the map"></div>
       </section>
       <section>
-        <form action="" class="filter-options" role="slider">
-          <h2 tabindex="2">Filter Results</h2>
-          <label for="neighborhoods-select" tabindex="-1">by neighborhoods</label>
+        <form
+          action=""
+          class="filter-options"
+          aria-labelledby="neighborhoods-select"
+        >
+          <h2 tabindex="0">Filter Results</h2>
+          <label for="neighborhoods-select" tabindex="-1"
+            >by neighborhoods</label
+          >
 
-          <select tabindex="3"
+          <select
+            tabindex="0"
             id="neighborhoods-select"
             name="neighborhoods"
             onchange="updateRestaurants()"
             aria-labelledby="neighborhoods-select"
-            
           >
-            <option value="all" >All Neighborhoods</option>
+            <option value="all">All Neighborhoods</option>
           </select>
           <label for="cuisines-select" tabindex="-1">by cuisines</label>
 
@@ -45,12 +55,12 @@
             name="cuisines"
             onchange="updateRestaurants()"
             aria-labelledby="cuisines-select"
-            tabindex="4"
+            tabindex="0"
           >
             <option value="all">All Cuisines</option>
           </select>
         </form>
-        <ul id="restaurants-list" role="list of restaurants" tabindex="5"></ul>
+        <ul id="restaurants-list" tabindex="0"></ul>
       </section>
     </main>
 
@@ -70,7 +80,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYb1WQLh2JaKpVrdZegH69tVAI2LH9gNs&libraries=places&callback=initMap"
     ></script>
 
-    <footer id="footer" role="contentinfo">
+    <footer id="footer" tabindex="0">
       Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All
       Rights Reserved.
     </footer>
