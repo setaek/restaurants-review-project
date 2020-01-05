@@ -20,7 +20,7 @@
     <!-- Beginning header -->
     <header>
       <!-- Beginning nav -->
-      <nav>
+      <nav role="navigation" aria-label="Breadcrumb">
         <h1><a href="/" tabindex="0">Restaurant Reviews</a></h1>
       </nav>
       <!-- Beginning breadcrumb -->
@@ -36,7 +36,12 @@
     <main id="maincontent">
       <!-- Beginning map -->
       <section id="map-container" tabindex="-1">
-        <div tabindex="-1" id="map" aria-label="Search through the map"></div>
+        <div
+          tabindex="-1"
+          id="map"
+          aria-label="location"
+          role="application"
+        ></div>
       </section>
       <!-- End map -->
       <!-- Beginning restaurant -->
